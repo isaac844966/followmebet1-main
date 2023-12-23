@@ -51,7 +51,7 @@ const Navbar = () => {
         <div className="nav">
           <div className='nav-center '>
             <Link to='/'>
-              <img src={logo} alt='logo' />
+              <img src={logo} alt='logo' title="Logo" loading="lazy"/>
             </Link>
             <div className='nav-links '>
               <NavLink to='/' exact className='nav-link' onClick={() => handleLinkClick('home')}>
