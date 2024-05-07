@@ -14,7 +14,7 @@ const HomeLayout = () => {
     <div>
       
       <Hero />
-      <Features1 />
+      {/* <Features1 /> */}
       <Features2 />
       <AboutUs />
     </div>
