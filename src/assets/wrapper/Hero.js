@@ -1,8 +1,8 @@
 import styled from "styled-components";
 const Wrapper = styled.section`
- .bg1{
-  padding-top: 8rem;
- }
+  .bg1 {
+    padding-top: 8rem;
+  }
   .align-item {
     padding: 2rem 2rem 0 2rem;
     display: grid;
@@ -19,9 +19,14 @@ const Wrapper = styled.section`
     margin-bottom: 2rem;
     color: var(--white);
   }
+  /* span {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    line-height: 2rem !important;
+    letter-spacing: 1px;
+  } */
   .hero p {
     margin-bottom: 2rem;
-    font-size: 20px;
+    font-size: 1.7rem;
     color: #cbd5e1;
   }
   .phone img {
@@ -50,7 +55,7 @@ const Wrapper = styled.section`
       padding: 6rem 4rem 0 4rem;
       display: grid;
       grid-template-columns: auto 1fr;
-     margin: auto;
+      margin: auto;
     }
     .phone {
       display: flex;

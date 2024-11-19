@@ -1,137 +1,79 @@
 import styled from "styled-components";
 
 const Wrapper = styled.section`
-section h1{
-  max-width: 1700px;
-    margin: auto;
-    padding-top: 4rem;
-    
-}
-
-
-  h1 {
-    padding: 2rem;
-    font-size: 40px;
-    font-weight: 700;
-    /* line-height: 48px; */
-    letter-spacing: 0em;
-    text-align: left;
-    color: var(--white);
-   
+  section {
+    padding: 2rem 1.5rem;
   }
-  .phone {
-    display: none;
+  section h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 38px;
+    color: var(--white);
+    margin-bottom: 3rem;
   }
   .align-center {
-    margin: 1rem;
-    margin-bottom: 0;
-    max-width: 1700px;
-    margin: auto;
-    padding:0 1rem
-  }
-  .cards {
-    display: grid;
-    gap: 1rem;
-    padding-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
   }
   .card {
     background: var(--primary-100);
     border-radius: 15px;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     display: flex;
     gap: 1rem;
+    margin-bottom: 1rem;
   }
   img {
-    width: 2rem;
+    width: 3rem;
     margin-top: 1rem;
     padding-bottom: 4rem;
   }
   h2 {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 700;
-    line-height: 28px;
-    letter-spacing: 0em;
-    text-align: left;
     color: var(--white);
     margin-bottom: 0.5rem;
   }
   p {
-    font-size: 16px;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
     color: #cbd5e1;
-    margin-bottom: 0.5rem;
   }
-  @media screen and (min-width: 768px) {
+  .img-container {
+    display: none;
+  }
+  @media only screen and (min-width: 820px) {
     .cards {
-      grid-template-columns: 1fr 1fr;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      gap: 1rem;
     }
-    h1 {
-      font-size: 45px;
+    .card {
+      width: 30rem;
     }
   }
   @media screen and (min-width: 1200px) {
-    section h1{
-
-    padding-top: 7rem;
-    
-}
+    section {
+      width: 1200px;
+      margin: 0 auto;
+      padding: 4rem 0;
+    }
     .align-center {
-      padding: 0 2rem;
-      display: flex;
-      align-items: center;
-      gap: 10px;
+      width: 1200px;
     }
-
-    .phone {
+    .img-container {
       display: block;
-      width: initial;
-      margin-top: -130px;
-      width: 35vw;
+      width: 100%;
     }
-    h1 {
-      padding: 2rem 4rem;
-      font-size: 50px;
-      line-height: 65px;
-    }
-    h2 {
-      font-size: 15px;
-      font-weight: 700;
-      line-height: 25px;
-      letter-spacing: 0.03rem;
-    }
-    p {
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 20px;
-      letter-spacing: 1px;
-      text-align: left;
-      color: #cbd5e1;
-      margin-bottom: 0.5rem;
-    }
-  }
-  @media screen and (min-width: 1880px) {
     .phone {
-      width: 45vw;
-    }
-    h1 {
-      font-size: 50px;
-    }
-    h2 {
-      font-family: "Outfit";
-      font-size: 23px;
-      font-weight: 700;
-      line-height: 30px;
-      letter-spacing: 0.225rem;
-    }
-    p {
-      font-family: "Outfit";
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 25px;
-      margin-bottom: 0.5rem;
+      width: 25rem;
+      margin: 0 auto;
     }
   }
 `;

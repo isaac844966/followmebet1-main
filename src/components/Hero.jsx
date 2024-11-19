@@ -8,31 +8,41 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <Wrapper>
-      <section className='bg1' id="home">
-        <div className='align-item'>
-          <div className='hero'>
+      <section className="bg1" id="home">
+        <div className="align-item">
+          <div className="hero">
             <h1>
-              One-on-one <br /> betting in <br /> <span>Naija way.</span>{" "}
+              <span>Wager, Win,</span> and Have Fun on Your Own Terms!
             </h1>
             <p>
-              Experience the distinctive FollowMeBet platform, a peer-to-peer
-              interactive social betting mobile app that enables you to engage
-              in friendly bets with your friends or compete against others
-              across an extensive range of events.
+              Step into the world of FollowMeBet, where gaming is redefined. No
+              more traditional betting platforms with rigid rules. With
+              FollowMeBet, you’re in control. Our innovative platform allows you
+              to wager on sports, politics, and pop culture events in a way
+              that’s fair, fun, and inclusive. Whether you’re a sports fanatic
+              or just love the thrill of the game, FollowMeBet offers something
+              for everyone.
             </p>
-            <div className='download'>
-              <Link to='/download'>
-                <img src={Android} alt='Android download ' />
+            <div className="download">
+              <Link to="/download">
+                <img src={Android} alt="Android download " />
               </Link>
-              <a href="https://apps.apple.com/ng/app/followmebet/id6444085742" target="_blank">
-                
-              <img src={AppStore} alt='AppStore download' />
-</a>
+              <a
+                href="https://apps.apple.com/ng/app/followmebet/id6444085742"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={AppStore} alt="AppStore download" />
+              </a>
             </div>
-            <img src={age} alt='18 plus please play Reesponsible' className='age ' />
+            <img
+              src={age}
+              alt="18 plus please play Reesponsible"
+              className="age "
+            />
           </div>
-          <div className='phone'>
-            <img src={phone1} alt='Phone' />
+          <div className="phone">
+            <img src={phone1} alt="Phone" />
           </div>
         </div>
       </section>
